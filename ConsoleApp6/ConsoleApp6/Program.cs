@@ -29,8 +29,6 @@ namespace ConsoleApp6
                     Elements[i] = Convert.ToDouble(Console.ReadLine());
                     Result += Elements[i];
                     Console.WriteLine("Сумма = " + Result);
-                    
-                   
                 }
                 Console.ReadKey();
                 break;
