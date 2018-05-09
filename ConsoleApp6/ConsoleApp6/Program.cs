@@ -13,12 +13,11 @@ namespace ConsoleApp6
             int N = 0;
             Console.WriteLine("Введите количество слагаемых: ");
             N = Convert.ToInt32(Console.ReadLine());
-                while (N <= 0)
+            if (N <= 0)
             {Console.WriteLine("Количество слагаемых должно быть больше нуля");
-             Console.ReadKey();
-                break;
+             Console.ReadKey();               
             }
-                while (N>0)
+            while (N>0)
             {
                 double[] Elements = new double[N];
                 double Result = 0;
@@ -28,15 +27,11 @@ namespace ConsoleApp6
                     Console.WriteLine("Введите " + (i + 1) + " число: ");
                     Elements[i] = Convert.ToDouble(Console.ReadLine());
                     Result += Elements[i];
-                    Console.WriteLine("Сумма = " + Result);
                 }
+                Console.WriteLine("Сумма = " + Result);
                 Console.ReadKey();
                 break;
-
-
             }
-            
         }
-
     }
 }
