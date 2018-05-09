@@ -10,12 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Int64 num, num_1;
             Console.WriteLine("Enter first number: ");
-            num = Convert.ToInt64(Console.ReadLine());
+            var number1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("\nEnter second number: ");
-            num_1 = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("The result is: " + (num + num_1).ToString());
+            var number2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("The result is: " + (number1 + number2).ToString());
             Console.ReadKey();
 
 
