@@ -10,18 +10,11 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Int64 x, n;
-            int y = 1;
             Console.WriteLine("Введите x: ");
-            x = Convert.ToInt64(Console.ReadLine());
+            var x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите степень: ");
-            n = Convert.ToInt64(Console.ReadLine());
-            if (n == 0)
-            {
-                Console.WriteLine(x + " в степени " + n + " = " + y);
-            }
-            else
-            { Console.WriteLine(x+" в степени "+n+" = "+Math.Pow(x,n)); }
+            var n = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(x+" в степени "+n+" = "+Math.Pow(x,n));
             Console.ReadKey();
 
         }
