@@ -14,24 +14,28 @@ namespace ConsoleApp6
             Console.WriteLine("Введите количество слагаемых: ");
             N = Convert.ToInt32(Console.ReadLine());
             if (N <= 0)
-            {Console.WriteLine("Количество слагаемых должно быть больше нуля");
-             Console.ReadKey();               
+
+            {
+                Console.WriteLine("Количество слагаемых должно быть больше нуля");
+                Console.ReadKey();
+                
             }
-            while (N>0)
+            if (N > 0)
             {
                 double[] Elements = new double[N];
                 double Result = 0;
-
                 for (int i = 0; i < N; i++)
+
                 {
                     Console.WriteLine("Введите " + (i + 1) + " число: ");
                     Elements[i] = Convert.ToDouble(Console.ReadLine());
                     Result += Elements[i];
                 }
+
                 Console.WriteLine("Сумма = " + Result);
                 Console.ReadKey();
-                break;
             }
+
         }
     }
 }
