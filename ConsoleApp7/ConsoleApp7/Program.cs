@@ -12,12 +12,10 @@ namespace ConsoleApp7
         {
             long number, typeid, cityid, tableid, recordid;
             number = 1267165676175383;
-            byte number1 = 0;
-            number1 = System.Convert.ToByte(number);
-            typeid = number >> 2;
-            cityid = typeid >> 13;
-            tableid = cityid >> 15;
-            recordid = tableid >> 32;
+            typeid = number >> 49;
+            cityid = number >> 38;
+            tableid = number >> 36;
+            recordid = number >> 19;
             Console.WriteLine("Type ID is:" + typeid);
             Console.WriteLine("City ID is:" + cityid);
             Console.WriteLine("Table ID is:" + tableid);
