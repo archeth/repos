@@ -10,10 +10,11 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            long number, typeid, cityid, tableid, recordid;
+            long number, typeid, cityid, tableid, recordid, ci1;
             number = 1267165676175383;
             typeid = number >> 49;
-            cityid = number >> 38;
+            ci1 = number >> 36;
+            cityid = ci1 << 15;
             tableid = number >> 36;
             recordid = number >> 19;
             Console.WriteLine("Type ID is:" + typeid);
