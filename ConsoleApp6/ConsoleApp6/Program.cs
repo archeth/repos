@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp6
 {
     class Program
-    {
-        static void Main(string[] args)
+    {static void Main(string[] args)
         {
             int N = 0;
             Console.WriteLine("Введите количество слагаемых: ");
