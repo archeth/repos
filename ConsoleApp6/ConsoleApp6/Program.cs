@@ -20,7 +20,7 @@ namespace ConsoleApp6
                 Console.ReadKey();
                 
             }
-            if (N > 0)
+            else
             {
                 double[] Elements = new double[N];
                 double Result = 0;
