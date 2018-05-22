@@ -16,25 +16,23 @@ namespace ConsoleApp6
 
             {
                 Console.WriteLine("Количество слагаемых должно быть больше нуля");
-                Console.ReadKey();
-                
+                Console.ReadKey();              
             }
+        
             else
+                
             {
                 double[] Elements = new double[N];
                 double Result = 0;
                 for (int i = 0; i < N; i++)
-
                 {
                     Console.WriteLine("Введите " + (i + 1) + " число: ");
                     Elements[i] = Convert.ToDouble(Console.ReadLine());
                     Result += Elements[i];
                 }
-
                 Console.WriteLine("Сумма = " + Result);
                 Console.ReadKey();
             }
-
         }
     }
 }
