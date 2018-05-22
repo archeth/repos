@@ -10,8 +10,7 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-
-          long number, typeid, cityid, tableid, recordid;
+            long number, typeid, cityid, tableid, recordid;
             number = 1267165676175383;
             typeid = number >> 49;
             ci1 = number >> 36;
